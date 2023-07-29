@@ -40,6 +40,7 @@ const config = {
           apiURL: 'https://evm-sidechain.xrpl.org/api',
           browserURL: 'https://evm-sidechain.xrpl.org',
         },
+        timeout: 400000
       },
     ],
   },
