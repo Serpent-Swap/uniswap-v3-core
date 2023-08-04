@@ -27,10 +27,17 @@ const config = {
       accounts: [process.env.DEPLOYER_PRIVATE_KEY],
       timeout: 10000000
     },
+    sepolia: {
+      url: `https://sepolia.infura.io/v3/${process.env.INFURA_KEY}`,
+      chainId: 11155111,
+      accounts: [process.env.DEPLOYER_PRIVATE_KEY],
+      timeout: 10000000
+    }
   },
   etherscan: {
     apiKey: {
       xrplDevnet: 'whatever',
+      sepolia: process.env.ETHERSCAN_API_KEY,
     },
     customChains: [
       {

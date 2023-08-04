@@ -1,8 +1,12 @@
 import { ethers } from 'hardhat';
 
+const nonce = 15;
+
 async function main() {
   console.log('Deploying core contracts...');
-  const uniswapV3Factory = await ethers.deployContract('UniswapV3Factory');
+  const uniswapV3Factory = await ethers.deployContract('UniswapV3Factory', {
+    nonce,
+  });
   await uniswapV3Factory.waitForDeployment();
   console.log(`UniswapV3Factory deployed to ${uniswapV3Factory.target}`);
 }
