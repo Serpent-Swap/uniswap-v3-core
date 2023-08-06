@@ -59,6 +59,7 @@
   "scripts": {
     "compile": "hardhat compile",
     "test": "hardhat test",
-    "deploy-core": "hardhat run --network xrplDevnet ./scripts/deploy-core.ts"
+    "deploy-core": "hardhat run --network xrplDevnet ./scripts/deploy-core.ts",
+    "generate-wagmi": "wagmi generate"
   }
 }
